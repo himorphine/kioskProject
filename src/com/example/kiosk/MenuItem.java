@@ -15,9 +15,25 @@ public class MenuItem {
         this.description = description;
     }
 
+    // Getter 추가 (캡슐화)
+    public String getName(){
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+
     // 정보 출력 메서드
     public void displayInfo() {
-        System.out.println(name + " - $" + price);
+        System.out.println(name + " | w " + price);
         System.out.println(description);
     }
+
+
 }
